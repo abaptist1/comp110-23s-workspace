@@ -1,0 +1,2 @@
+""" Enviornemnt for practice questions for quiz 0"""
+print("hello"[0] + "hello"[4] + "hello"[1])
