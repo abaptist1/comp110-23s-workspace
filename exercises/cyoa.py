@@ -28,7 +28,7 @@ def option_a() -> None:
         player_response = int(input("Heads (1) or Tails(2)?: "))
         if player_response == coin_result:
             points += 10
-            print(f"Nice one! you earned 1 point! Total points: {points}")
+            print(f"Nice one! you earned 10 points! Total points: {points}")
         else:
             print(f"Wrong! Total points: {points}") 
         return None
