@@ -76,3 +76,13 @@ def concat(table_1: dict[str, list[str]], table_2: dict[str, list[str]]) -> dict
         else:
             result[column] = table_2[column]
     return result
+
+
+def count(frequency: list[str]) -> dict[str, int]:
+    result: dict[str, int] = {}
+    for item in frequency:
+        if item in result:
+            result[item] += 1
+        else:
+            result[item] = 1
+    return result
