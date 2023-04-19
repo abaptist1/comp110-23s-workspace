@@ -9,6 +9,10 @@ pygame.init()
 HEIGHT = 450
 WIDTH = 800
 FPS = 60
+BACKGROUND_COLOR = [53, 130, 27]
+BASKET_COLOR = [189,136,66]
+APPLE_COLOR = [27,130,50]
+
 
 # creates clock object to limit FPS
 FramePerSec = pygame.time.Clock()
@@ -49,13 +53,14 @@ while True:
                         holding_apple = True
                         current_apple = apple
 
-    displaysurface.fill((53, 130, 27))
+    displaysurface.fill(BACKGROUND_COLOR)
     # These draw our surface on screen
 
-    for apple in apples:
-        pygame.draw.circle(displaysurface, (200, 50, 50), apple.center, apple.width)
 
-    pygame.draw.rect(displaysurface, (189, 136, 66), basket)
+    for apple in apples:
+        pygame.draw.circle(displaysurface, APPLE_COLOR, apple.center, apple.width)
+
+    pygame.draw.rect(displaysurface, BASKET_COLOR, basket)
 
     if holding_apple and current_apple is not None:
         current_apple.center = pygame.mouse.get_pos()
