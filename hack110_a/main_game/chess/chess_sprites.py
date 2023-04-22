@@ -7,7 +7,7 @@ import pygame
 from pygame.locals import MOUSEBUTTONDOWN, MOUSEBUTTONUP, RLEACCEL
 
 from chess_constants import *
-from chess_pieces import *
+
 
 class Bishop(pygame.sprite.Sprite):
     """Generates the Bishop Piece"""

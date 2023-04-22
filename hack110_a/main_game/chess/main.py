@@ -5,11 +5,11 @@ from pygame.locals import K_ESCAPE, KEYDOWN, QUIT
 
 from chessboard import *
 from chess_constants import *
-from chess_sprites import *
+from chess_sprites import Pawn, King, Knight, Rook, Queen, Bishop
 
 
 # Initialize game
-pygame.init()
+pygame.init() 
 
 # Set up window
 screen = pygame.display.set_mode([BACKGROUND_WIDTH, BACKGROUND_HEIGHT])
@@ -45,8 +45,8 @@ def main():
 
         background.update()
         background.render(screen)
-        if sprite_dragging:
-            currently_dragged.rect.center = pygame.mouse.get_pos()
+        # if sprite_dragging:
+        #     currently_dragged.rect.center = pygame.mouse.get_pos()
 
         for entity in all_sprites:
             screen.blit(entity.surf, entity.rect)

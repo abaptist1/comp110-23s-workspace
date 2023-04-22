@@ -1,8 +1,10 @@
 """Generates Chessboard, Chess Piece Sprites, and piece positions (x,y coords)"""
 
 import pygame
-from chess_constants import *
-from chess_sprites import *
+from chess_constants import CHESS_BACKGROUND
+from chess_constants import BACKGROUND_HEIGHT
+from chess_constants import BACKGROUND_WIDTH
+
 
 class Background():
     """Generates background chessboard surface"""
