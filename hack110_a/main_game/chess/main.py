@@ -45,8 +45,7 @@ def main():
 
         background.update()
         background.render(screen)
-        # if sprite_dragging:
-        #     currently_dragged.rect.center = pygame.mouse.get_pos()
+        
 
         for entity in all_sprites:
             screen.blit(entity.surf, entity.rect)
