@@ -48,8 +48,9 @@ die = [10,20,30,40,50,60]
 
 for i in range(20):
    #Step 1: Check to see if the turtle has reached the circle.
+   if turtle.pos == circle1.pos:
+      
    #(add an if and elif statement)
-
 
    #Step 2: if they havent reached the circle enter the else block that allows the turtle to race.
    #in each iteration, "roll the die" by randomly picking a number from the die list.
