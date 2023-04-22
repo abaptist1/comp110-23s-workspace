@@ -35,12 +35,6 @@ class Bishop(pygame.sprite.Sprite):
             self.surf = pygame.image.load(W_BISHOP_IMG).convert()
             self.rect = self.surf.get_rect(center = C1) #c1 orig
        
-    
-    
-
-    # def capture_check():
-    #     ##TODO: Check if capturing piece, if so make that peice dissappear with piece.kill()
-
 
 class King(pygame.sprite.Sprite):
     """Generates the King Piece"""
@@ -60,17 +54,6 @@ class King(pygame.sprite.Sprite):
         else:
             self.surf = pygame.image.load(W_KING_IMG).convert()
             self.rect = self.surf.get_rect(center = E1)
-
-    # def move() -> None: 
-    #     ##TODO: Check if you can move to this spot, then move it 
-    #     return 
-
-    # def can_move() -> bool: 
-    #     ##TODO: Check if a move is valid/ on the board
-    #     return False 
-    
-    # def capture_check():
-    #     ##TODO: Check if capturing piece, if so make that peice dissappear with piece.kill()
 
 
 class Knight(pygame.sprite.Sprite):
@@ -97,16 +80,6 @@ class Knight(pygame.sprite.Sprite):
             self.surf = pygame.image.load(W_KNIGHT_IMG).convert()
             self.rect = self.surf.get_rect(center = B1)
        
-    # def move() -> None: 
-    #     ##TODO: Check if you can move to this spot, then move it 
-    #     return 
-
-    # def can_move() -> bool: 
-    #     ##TODO: Check if a move is valid/ on the board
-    #     return False 
-    
-    # def capture_check():
-    #     ##TODO: Check if capturing piece, if so make that peice dissappear with piece.kill()
 
 
 class Pawn(pygame.sprite.Sprite):
@@ -127,16 +100,6 @@ class Pawn(pygame.sprite.Sprite):
             self.surf = pygame.image.load(W_PAWN_IMG).convert()
             self.rect = self.surf.get_rect(center = tag)
     
-    # def move() -> None: 
-    #     ##TODO: Check if you can move to this spot, then move it 
-    #     return 
-
-    # def can_move() -> bool: 
-    #     ##TODO: Check if a move is valid/ on the board
-    #     return False 
-    
-    # def capture_check():
-    #     ##TODO: Check if capturing piece, if so make that peice dissappear with piece.kill()
 
 
 class Queen(pygame.sprite.Sprite):
@@ -156,17 +119,6 @@ class Queen(pygame.sprite.Sprite):
         else:
             self.surf = pygame.image.load(W_QUEEN_IMG).convert()
             self.rect = self.surf.get_rect(center = D1)
-
-    # def move() -> None: 
-    #     ##TODO: Check if you can move to this spot, then move it 
-    #     return 
-
-    # def can_move() -> bool: 
-    #     ##TODO: Check if a move is valid/ on the board
-    #     return False 
-    
-    # def capture_check():
-    #     ##TODO: Check if capturing piece, if so make that peice dissappear with piece.kill()
 
 
 
@@ -193,14 +145,3 @@ class Rook(pygame.sprite.Sprite):
         else: #Bottom left white
             self.surf = pygame.image.load(W_ROOK_IMG).convert()
             self.rect = self.surf.get_rect(center = A1) #c1 orig
-       
-    # def move() -> None: 
-    #     ##TODO: Check if you can move to this spot, then move it 
-    #     return 
-
-    # def can_move() -> bool: 
-    #     ##TODO: Check if a move is valid/ on the board
-    #     return False 
-    
-    # def capture_check():
-    #     ##TODO: Check if capturing piece, if so make that peice dissappear with piece.kill()

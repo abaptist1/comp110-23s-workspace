@@ -1,8 +1,9 @@
 """ Generates Piece Sprite Groups"""
 
 from chess_sprites import *
+
 from chess_constants import *
-from hack110_a.main_game.chess.chess_sprites import Pawn, Bishop, King, Queen, Rook, Knight
+
 
 w_pawns: list[tuple] = [A2, B2, C2, D2, E2, F2, G2, H2]
 new_w_pawns: list[Pawn] = []
@@ -36,6 +37,23 @@ b_rook1 = Rook (True, True)
 b_rook2 = Rook (True, False)
 w_rook1 = Rook (False, True)
 w_rook2 = Rook (False, False)
+
+b_pawn1 = Pawn(True, A7)
+b_pawn2 = Pawn(True, B7)
+b_pawn3 = Pawn(True, C7)
+b_pawn4 = Pawn(True, D7)
+b_pawn5 = Pawn(True, E7)
+b_pawn7 = Pawn(True, F7)
+b_pawn8 = Pawn(True, G7)
+
+w_pawn1 = Pawn(False, A2)
+w_pawn2 = Pawn(False, B2)
+w_pawn3 = Pawn(False, C2)
+w_pawn4 = Pawn(False, D2)
+w_pawn5 = Pawn(False, E2)
+w_pawn6 = Pawn(False, F2)
+w_pawn7 = Pawn(False, G2)
+w_pawn8 = Pawn(False, H2)
 
 
 
